@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>lat.kraken</groupId>
+    <artifactId>AdStreams</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <name>AnunciosDirectos</name>
+
+    <properties>
+        <!-- Define la versión de Java -->
+        <java.version>1.8</java.version>
+        <!-- Define la versión de Spigot y PlaceholderAPI -->
+        <spigot.version>1.16.5-R0.1-SNAPSHOT</spigot.version>
+        <placeholderapi.version>2.11.6</placeholderapi.version>
+    </properties>
+
+    <dependencies>
+        <!-- Dependencia de Spigot API para la versión 1.16.5 -->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>${spigot.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Dependencia de PlaceholderAPI desde JitPack -->
+        <dependency>
+            <groupId>com.github.PlaceholderAPI</groupId>
+            <artifactId>PlaceholderAPI</artifactId>
+            <version>${placeholderapi.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <!-- Repositorio de Spigot -->
+        <repository>
+            <id>spigotmc-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/public/</url>
+        </repository>
+
+        <!-- Repositorio de JitPack para PlaceholderAPI -->
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

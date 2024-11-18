@@ -1,0 +1,45 @@
+name: Ad-Streams
+version: '${project.version}'
+main: lat.kraken.adstream
+api-version: '1.16'
+
+commands:
+  adstream:
+    description: Comando principal
+    usage: /adstream <help|reload>
+    permission: adstream.command
+
+  twitch:
+    description: Comando de Twitch
+    permission: stream.twitch
+
+  kick:
+    description: Comando de Kick
+    permission: adstream.kick
+
+  tiktok:
+    description: Comando de TikTok
+    permission: adstream.tiktok
+
+permissions:
+  adstream.command:
+    description: Permiso para usar el comando directo
+    default: op
+
+  adstream.reload:
+    description: Permiso para recargar la configuración
+    default: op
+
+  adstream.twitch:
+    description: Permiso para enviar mensajes de Twitch
+    default: op
+
+  adstream.kick:
+    description: Permiso para enviar mensajes de Kick
+    default: op
+
+  adstream.tiktok:
+    description: Permiso para enviar mensajes de TikTok
+    default: op
+
+softdepend: [PlaceholderAPI]

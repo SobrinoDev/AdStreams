@@ -1,0 +1,32 @@
+# Configuración para el plugin Ad-Stream
+
+# Mensajes de ayuda
+help:
+  title: "&6&lAd-Stream &e1.0"
+  description:
+    - "&e--------------------------------------------"
+    - "&6&l/directo help &f- &7Muestra esta ayuda."
+    - "&6&l/twitch [NombreCanal] [url] &f- &7Anuncia un directo en Twitch."
+    - "&6&l/kick [NombreCanal] [url] &f- &7Anuncia un directo en Kick."
+    - "&6&l/tiktok [NombreCanal] [url] &f- &7Anuncia un directo en TikTok."
+    - "&6&l/directo reload &f- &7Recarga tla configuración del plugin."
+
+# Mensajes de anuncio
+tiktok:
+  messages:
+    - ""
+    - "&7¡&fEl canal &b&l%canal%&a &festá transmitiendo en &1&lTikTok&7! &FÚnete ahora&7: %url%"
+    - ""
+twitch:
+  messages:
+    - ""
+    - "&7¡&fEl canal &b&l%canal% &festá transmitiendo en &5&LTwitch&7! &FÚnete ahora&7: %url%"
+    - ""
+kick:
+  messages:
+    - ""
+    - "&7¡&fEl canal &b&l%canal% &festá transmitiendo en &2&lKick&7! &FÚnete ahora&7: %url%"
+    - ""
+# Mensaje de recarga
+reload:
+  success: "AnuncioDirectos - se ha recargado correctamente."
